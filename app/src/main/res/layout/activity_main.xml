@@ -17,21 +17,26 @@
         android:src="@drawable/img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="342dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simpleImageView"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/simpleImageView">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fitne"
+            android:textColor="@color/black"
             android:textSize="50dp"
             android:textStyle="bold" />
 
@@ -41,9 +46,21 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="ss Club"
+            android:textColor="#F082F2"
             android:textSize="50dp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </EditText>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
