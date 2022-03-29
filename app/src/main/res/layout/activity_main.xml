@@ -24,9 +24,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="342dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simpleImageView">
@@ -51,16 +49,39 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText"
+    <RelativeLayout
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:flow_verticalAlign="center"
+        app:flow_horizontalAlign="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:paddingLeft="10dp"
+        >
 
-    </EditText>
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_icon"
+            android:background="@null"
+            android:height="40dp"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/username_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="3dp"
+            android:src="@drawable/email" />
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
