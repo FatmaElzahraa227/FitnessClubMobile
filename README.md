@@ -1,5 +1,5 @@
-# FitnessClubMobile!
-[Activity1](https://user-images.githubusercontent.com/70411867/161093490-d7840aa1-097c-4172-ac47-bf60f20da958.jpeg)
+# FitnessClubMobile
+![Activity1](https://user-images.githubusercontent.com/70411867/161093490-d7840aa1-097c-4172-ac47-bf60f20da958.jpeg)
 ![Activity2](https://user-images.githubusercontent.com/70411867/161093501-2e0ad2f3-ca31-443d-8424-d815f5ccc2fc.jpeg)
 ![Activity3](https://user-images.githubusercontent.com/70411867/161093503-5f1fca0e-6d40-4ab0-a627-1e29dcd5ef1d.jpeg)
 ![Activity4](https://user-images.githubusercontent.com/70411867/161093505-96346b0e-748b-45af-adfe-37b08751b188.jpeg)
