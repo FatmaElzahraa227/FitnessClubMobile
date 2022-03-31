@@ -65,7 +65,7 @@
     <View
         android:layout_width="416dp"
         android:layout_height="315dp"
-        android:background="@drawable/Frame"
+        android:background="@drawable/frame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
