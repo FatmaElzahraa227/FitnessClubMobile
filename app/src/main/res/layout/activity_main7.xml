@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:paddingLeft="20dp"
+            android:paddingLeft="10dp"
             android:text="Add Program"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +118,7 @@
             android:paddingLeft="20dp"
             android:text="Edit Programs"
             android:textColor="@color/white"
-
+            android:paddingRight="10dp"
 
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -191,14 +191,14 @@
         android:id="@+id/editText6"
         android:layout_width="131dp"
         android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded3"
         android:hint="plan 1"
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="34dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
     </EditText>
 
@@ -206,12 +206,14 @@
         android:id="@+id/editText8"
         android:layout_width="131dp"
         android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
         android:background="@drawable/rounded3"
         android:hint="plan 2"
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="342dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3">
 
     </EditText>
 
@@ -219,24 +221,28 @@
         android:id="@+id/editText10"
         android:layout_width="131dp"
         android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
         android:background="@drawable/rounded3"
         android:hint="plan 3"
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="482dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9">
 
     </EditText>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="42dp"
         android:background="@drawable/rounded2"
         android:paddingHorizontal="30dp"
         android:text="Edit plan"
         app:backgroundTint="#F082F2"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="633dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
     </Button>
@@ -245,12 +251,14 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="42dp"
         android:background="@drawable/rounded2"
         android:paddingHorizontal="30dp"
         android:text="Add new plan"
         app:backgroundTint="#F082F2"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="633dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
 
     </Button>
@@ -266,9 +274,10 @@
 "
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        app:layout_constraintBottom_toTopOf="@+id/editText9"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        tools:layout_editor_absoluteX="32dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6">
 
     </EditText>
 
@@ -283,8 +292,9 @@
 "
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        tools:layout_editor_absoluteX="32dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText8">
 
     </EditText>
 
@@ -299,8 +309,9 @@
 "
         android:paddingLeft="40dp"
         app:backgroundTint="#F082F2"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="529dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10">
 
     </EditText>
 
