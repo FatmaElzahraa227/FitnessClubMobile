@@ -157,7 +157,9 @@
         app:backgroundTint="#F082F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5" />
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
+        android:onClick="launchActivityOne"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -176,7 +178,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/messageWithLinkkk" />
+            android:text="@string/messageWithLinkkk"
+            android:onClick="launchActivityOne"/>
     </LinearLayout>
 
 
