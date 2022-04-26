@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity6"
+    tools:context=".MainActivity5"
     android:background="@drawable/gymo"
     >
 
@@ -85,6 +85,7 @@
                 android:id="@+id/textView5"
                 android:textColor="@color/white"
                 app:backgroundTint="#0000"
+                android:onClick="launchActivitySix"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
