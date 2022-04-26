@@ -89,7 +89,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:paddingLeft="10dp"/>
+            android:paddingLeft="10dp"
+            android:onClick="launchActivitySix"/>
 
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -116,7 +117,8 @@
             app:backgroundTint="#0000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="launchActivitySeven"/>
 
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -131,7 +133,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="launchActivityFive"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -221,7 +224,8 @@
             app:layout_constraintHorizontal_bias="0.884"
             app:layout_constraintStart_toStartOf="@+id/editText2"
             app:layout_constraintTop_toTopOf="@+id/editText3"
-            app:layout_constraintVertical_bias="0.355" />
+            app:layout_constraintVertical_bias="0.355"
+            android:onClick="launchActivityFive"/>
 
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -237,7 +241,8 @@
             app:layout_constraintHorizontal_bias="0.884"
             app:layout_constraintStart_toStartOf="@+id/editText3"
             app:layout_constraintTop_toTopOf="@+id/editText4"
-            app:layout_constraintVertical_bias="0.355" />
+            app:layout_constraintVertical_bias="0.355"
+            android:onClick="launchActivityFive"/>
 
 
         <Button
@@ -254,7 +259,8 @@
             app:layout_constraintHorizontal_bias="0.884"
             app:layout_constraintStart_toStartOf="@+id/editText4"
             app:layout_constraintTop_toTopOf="@+id/editText5"
-            app:layout_constraintVertical_bias="0.355" />
+            app:layout_constraintVertical_bias="0.355"
+            android:onClick="launchActivityFive"/>
 
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -267,10 +273,11 @@
             app:backgroundTint="#0000"
             app:layout_constraintBottom_toBottomOf="@+id/editText2"
             app:layout_constraintEnd_toEndOf="@+id/editText2"
-            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintHorizontal_bias="0.885"
             app:layout_constraintStart_toStartOf="@+id/editText2"
             app:layout_constraintTop_toTopOf="@+id/editText2"
-            app:layout_constraintVertical_bias="0.355" />
+            app:layout_constraintVertical_bias="0.0"
+            android:onClick="launchActivityFive"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
