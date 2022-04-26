@@ -15,4 +15,18 @@ public class MainActivity6 extends AppCompatActivity {
     }
 
 
+    public void launchActivityFour(View view) {
+        Intent intent = new Intent(this, MainActivity4.class);
+        startActivity(intent);
+    }
+
+    public void launchActivityEight(View view) {
+        Intent intent = new Intent(this, MainActivity8.class);
+        startActivity(intent);
+    }
+
+    public void launchActivityFive(View view) {
+        Intent intent = new Intent(this, MainActivity5.class);
+        startActivity(intent);
+    }
 }
