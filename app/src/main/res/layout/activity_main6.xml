@@ -59,6 +59,7 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_marginStart="36dp"
             android:src="@drawable/approvedpng"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="parent" />

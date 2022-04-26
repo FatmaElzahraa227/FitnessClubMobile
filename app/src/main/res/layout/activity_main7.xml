@@ -89,7 +89,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:paddingLeft="10dp"/>
+            android:paddingLeft="10dp"
+            android:onClick="launchActivitySix"/>
 
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -103,7 +104,8 @@
             app:backgroundTint="#0000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="launchActivityFour"/>
         <Button
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
@@ -131,7 +133,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="launchActivityFive"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -249,7 +252,8 @@
         android:text="Edit plan"
         app:backgroundTint="#F082F2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="launchActivityFive">
 
 
     </Button>
@@ -265,7 +269,8 @@
         android:text="Add new plan"
         app:backgroundTint="#F082F2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="launchActivityFour">
 
 
     </Button>
