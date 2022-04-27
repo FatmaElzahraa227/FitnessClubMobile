@@ -35,7 +35,7 @@ public class NotificationJobService extends JobService {
 
     @Override
     public boolean onStopJob(JobParameters jobParameters) {
-        return true;
+        return false;
     }
     public void createNotificationChannel() {
 

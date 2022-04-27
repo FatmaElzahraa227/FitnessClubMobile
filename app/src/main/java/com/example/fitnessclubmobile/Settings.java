@@ -29,11 +29,29 @@ public class Settings extends AppCompatActivity {
         mScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
         mSeekBar = findViewById(R.id.seekBar);
         final TextView seekBarProgress = findViewById(R.id.seekBarProgress);
+        mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (i > 0){
+                    seekBarProgress.setText(i + " s");
+                }else {
+                    seekBarProgress.setText("Not Set");
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
     }
     public void scheduleJob(View view) {
         RadioGroup networkOptions = findViewById(R.id.networkOptions);
         int selectedNetworkID = networkOptions.getCheckedRadioButtonId();
         int selectedNetworkOption = JobInfo.NETWORK_TYPE_NONE;
+        int seekBarInteger = mSeekBar.getProgress();
+        boolean seekBarSet = seekBarInteger > 0;
         switch(selectedNetworkID){
             case R.id.noNetwork:
                 selectedNetworkOption = JobInfo.NETWORK_TYPE_NONE;
@@ -51,8 +69,12 @@ public class Settings extends AppCompatActivity {
                 .setRequiredNetworkType(selectedNetworkOption)
                 .setRequiresDeviceIdle(mDeviceIdleSwitch.isChecked())
                 .setRequiresCharging(mDeviceChargingSwitch.isChecked());
-        boolean constraintSet = (selectedNetworkOption != JobInfo.NETWORK_TYPE_NONE)
-                || mDeviceChargingSwitch.isChecked() || mDeviceIdleSwitch.isChecked();
+        if (seekBarSet) {
+            builder.setOverrideDeadline(seekBarInteger * 1000);
+        }
+        boolean constraintSet = selectedNetworkOption != JobInfo.NETWORK_TYPE_NONE
+                || mDeviceChargingSwitch.isChecked() || mDeviceIdleSwitch.isChecked()
+                || seekBarSet;
         if(constraintSet) {
             JobInfo myJobInfo = builder.build();
             mScheduler.schedule(myJobInfo);
