@@ -72,8 +72,7 @@
             android:height="40dp"
             android:background="@null"
             android:hint="Email"
-            android:paddingLeft="10dp"
-             />
+            android:paddingLeft="10dp" />
 
         <ImageView
             android:id="@+id/username_icon"
@@ -133,12 +132,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
-        android:onClick="launchActivityOne"
+        android:onClick="launchActivityFour"
+         />
 
-
-
-        tools:ignore="OnClick" />
-        />
 
     <TextView
         android:layout_width="wrap_content"
