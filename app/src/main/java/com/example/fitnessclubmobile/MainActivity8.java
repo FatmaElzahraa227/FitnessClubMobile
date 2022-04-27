@@ -79,4 +79,8 @@ public class MainActivity8 extends AppCompatActivity {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
+    public void goExercise(View view) {
+        Intent intent = new Intent(this, Exercise.class);
+        startActivity(intent);
+    }
 }

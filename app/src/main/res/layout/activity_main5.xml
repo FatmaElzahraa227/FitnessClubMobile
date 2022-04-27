@@ -66,20 +66,36 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="goHome"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#F082F2"
+        android:textSize="17dp"
+        app:backgroundTint="#0000"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:onClick="goHome"
-        android:textSize="17dp"
-        android:layout_marginTop="10dp"
-        android:text="Logout"
+        android:onClick="goExercise"
+        android:text="Go Exercise"
         android:textAllCaps="false"
         android:textColor="#F082F2"
-        app:backgroundTint="#0000"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="17dp"
+        app:backgroundTint="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
