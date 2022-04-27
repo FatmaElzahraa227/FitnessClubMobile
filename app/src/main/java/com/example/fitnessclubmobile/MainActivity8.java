@@ -74,9 +74,7 @@ public class MainActivity8 extends AppCompatActivity {
     public void Facebook(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://www.facebook.com/"));
-//        if (intent.resolveActivity(getPackageManager()) != null) {
         startActivity(intent);
-//        }
 
     }
 
