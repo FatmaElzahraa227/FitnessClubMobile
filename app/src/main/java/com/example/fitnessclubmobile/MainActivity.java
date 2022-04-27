@@ -1,6 +1,7 @@
 package com.example.fitnessclubmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -11,7 +12,11 @@ import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
+
     private CustomReceiver mReceiver ;
+
+
+
 
     public static final  String LOG_TAG="CodeLab";
     @Override

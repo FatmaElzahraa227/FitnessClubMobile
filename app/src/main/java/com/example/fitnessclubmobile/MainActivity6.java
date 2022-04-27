@@ -1,6 +1,7 @@
 package com.example.fitnessclubmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,11 +11,15 @@ import android.view.View;
 
 public class MainActivity6 extends AppCompatActivity {
 
+
+
     public static final  String LOG_TAG="CodeLab";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
+
+
     }
     @Override
     protected void onStart() {
