@@ -3,4 +3,6 @@
     <string name="messageWithLink"><font color='#696969'><a href="https://www.google.com/">Forgot Password?</a></font></string>
     <string name="messageWithLinkk"><font color='#696969'><a href="https://www.google.com/">Create one!</a></font></string>
     <string name="messageWithLinkkk"><font color='#696969'><a href="https://www.google.com/">Login</a></font></string>
+    <string name="edittext_uri">http://developer.android.com</string>
+    <string name="button_uri">LogIn</string>
 </resources>

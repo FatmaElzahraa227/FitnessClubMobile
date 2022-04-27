@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity {
     private CustomReceiver mReceiver ;
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mReceiver= new CustomReceiver();
 
         IntentFilter filter = new IntentFilter();
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.registerReceiver(mReceiver, filter);
     }
+
+
+
 
     @Override
     protected void onDestroy() {
@@ -80,4 +85,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
+
+
 }
