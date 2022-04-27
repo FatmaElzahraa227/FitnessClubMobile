@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:textAlignment="center">
 
         <Button
@@ -243,50 +243,55 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent" />
-    <EditText
+    <TextView
         android:id="@+id/editText6"
         android:layout_width="131dp"
         android:layout_height="47dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded3"
-        android:hint="plan 1"
-        android:paddingLeft="40dp"
+        android:text="Plan 1"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
         app:backgroundTint="#F082F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-    </EditText>
+    </TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/editText8"
         android:layout_width="131dp"
         android:layout_height="47dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded3"
-        android:hint="plan 2"
-        android:paddingLeft="40dp"
+        android:text="Plan 2"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
         app:backgroundTint="#F082F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3">
 
-    </EditText>
+    </TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/editText10"
         android:layout_width="131dp"
         android:layout_height="47dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded3"
-        android:hint="plan 3"
-        android:paddingLeft="40dp"
+        android:text="Plan 3"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
         app:backgroundTint="#F082F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText9">
-
-    </EditText>
+    </TextView>
 
     <Button
         android:layout_width="wrap_content"
@@ -294,12 +299,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="62dp"
         android:background="@drawable/rounded2"
+        android:onClick="launchActivityFive"
         android:paddingHorizontal="30dp"
         android:text="Edit plan"
         app:backgroundTint="#F082F2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="launchActivityFive">
+        app:layout_constraintTop_toBottomOf="@+id/editText11">
 
 
     </Button>
@@ -311,61 +317,64 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="62dp"
         android:background="@drawable/rounded2"
+        android:onClick="launchActivityFour"
         android:paddingHorizontal="30dp"
         android:text="Add new plan"
         app:backgroundTint="#F082F2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="launchActivityFour">
+        app:layout_constraintTop_toBottomOf="@+id/editText11">
 
 
     </Button>
 
-    <EditText
+    <TextView
         android:id="@+id/editText3"
         android:layout_width="343dp"
         android:layout_height="74dp"
         android:background="@drawable/rounded3"
-        android:hint="Membership type : Full Service
-        Amount to pay : 100 dollar / Month
-        Numbers of day : 8 days / Month
-"
-        android:paddingLeft="40dp"
+        android:text="Membership type : Full Service\nAmount to pay : 100 dollar / Month\nNumber of days : 8 days / Month
+"       android:gravity="left"
+        android:textColor="@color/black"
+        android:paddingLeft="35dp"
+        android:textSize="16dp"
+        android:paddingTop="10dp"
         app:backgroundTint="#F082F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6">
 
-    </EditText>
+    </TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/editText9"
         android:layout_width="343dp"
         android:layout_height="74dp"
         android:background="@drawable/rounded3"
-        android:hint="Membership type : Full Service
-        Amount to pay : 100 dollar / Month
-        Numbers of day : 8 days / Month
-"
-        android:paddingLeft="40dp"
+        android:text="Membership type : Full Service\nAmount to pay : 100 dollar / Month\nNumbers of day : 8 days / Month
+"       android:gravity="left"
+        android:textColor="@color/black"
+        android:paddingLeft="35dp"
+        android:textSize="16dp"
+        android:paddingTop="10dp"
         app:backgroundTint="#F082F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText8">
 
-    </EditText>
+    </TextView>
 
     <EditText
         android:id="@+id/editText11"
         android:layout_width="343dp"
         android:layout_height="74dp"
         android:background="@drawable/rounded3"
-        android:hint="Membership type : Full Service
-        Amount to pay : 100 dollar / Month
-        Numbers of day : 8 days / Month
-"
-        android:paddingLeft="40dp"
+        android:text="Membership type : Full Service\nAmount to pay : 100 dollar / Month\nNumbers of day : 8 days / Month"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="10dp"
         app:backgroundTint="#F082F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
