@@ -301,8 +301,9 @@
         <View
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:layout_marginLeft="2dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/facebook"
+            android:onClick="Facebook"
 
             >
         </View>

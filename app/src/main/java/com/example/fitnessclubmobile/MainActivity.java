@@ -1,21 +1,29 @@
 package com.example.fitnessclubmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity {
+
     private CustomReceiver mReceiver ;
+
+
+
 
     public static final  String LOG_TAG="CodeLab";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mReceiver= new CustomReceiver();
 
         IntentFilter filter = new IntentFilter();
@@ -26,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.registerReceiver(mReceiver, filter);
     }
+
+
+
 
     @Override
     protected void onDestroy() {
@@ -80,4 +91,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
+
+
+
 }
