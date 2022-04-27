@@ -40,7 +40,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:id="@+id/constraintLayout2"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="parent">
@@ -65,6 +66,20 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="goHome"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#F082F2"
+        app:backgroundTint="#0000"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"

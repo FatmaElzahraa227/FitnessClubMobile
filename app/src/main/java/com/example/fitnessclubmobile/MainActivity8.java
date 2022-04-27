@@ -65,4 +65,14 @@ public class MainActivity8 extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity5.class);
         startActivity(intent);
     }
+
+    public void launchActivitySeven(View view) {
+        Intent intent = new Intent(this, MainActivity7.class);
+        startActivity(intent);
+    }
+
+    public void goHome(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
