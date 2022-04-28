@@ -1,6 +1,8 @@
 package com.example.fitnessclubmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,13 +10,27 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity6 extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class MainActivity6 extends AppCompatActivity {
+    private ArrayList<String> mWordList;
+    private RecyclerView mRecyclerView;
+    private CustomAdapter mAdapter;
     public static final  String LOG_TAG="CodeLab";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
+        mWordList=new ArrayList<>();
+        mWordList.add("Field 1");
+        mWordList.add("Field 2");
+        mWordList.add("Field 3");
+        mWordList.add("Field 4");
+        mWordList.add("Field 5");mWordList.add("Field 6");mWordList.add("Field 7");mWordList.add("Field 8");mWordList.add("Field 9");mWordList.add("Field 10");mWordList.add("Field 11");mWordList.add("Field 12");mWordList.add("Field 13");mWordList.add("Field 14");mWordList.add("Field 15");
+        mRecyclerView=findViewById(R.id.recyclerview);
+        mAdapter=new CustomAdapter(mWordList);
+        mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
     @Override
     protected void onStart() {

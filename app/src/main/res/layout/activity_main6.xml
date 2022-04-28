@@ -168,82 +168,37 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:itemCount="4"
+        tools:listitem="@layout/activity_list_item" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="340dp"
-            android:layout_height="60dp"
-            android:background="@drawable/rounded3"
-            android:hint="Field 1"
-            android:paddingLeft="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </EditText>
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="340dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/rounded3"
-            android:hint="Field 2"
-            android:paddingLeft="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText3">
-
-        </EditText>
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="340dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/rounded3"
-            android:hint="Field 3"
-            android:paddingLeft="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText4">
-
-        </EditText>
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="340dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/rounded3"
-            android:hint="Field 4"
-            android:paddingLeft="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText5">
-
-        </EditText>
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:layout_marginTop="32dp"
             android:background="@drawable/rounded2"
+            android:onClick="launchActivityFour"
             android:paddingHorizontal="30dp"
             android:text="Submit Program"
             app:backgroundTint="#F082F2"
-            android:onClick="launchActivityFour"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2">
+            app:layout_constraintTop_toTopOf="parent">
 
 
         </Button>

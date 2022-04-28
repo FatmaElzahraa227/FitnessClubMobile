@@ -25,9 +25,8 @@
 
     <!-- Button label for Reset button -->
     <string name="reset_button" translatable="false">Reset</string>
-    
-    
-    
+
+
     <string name="logout_button">Logout</string>
     <string name="logged_in">Logged in User</string>
     <string name="add_program">Add Program</string>
